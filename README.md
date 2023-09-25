@@ -1,44 +1,48 @@
-# OpenAI API Quickstart - Node.js example app
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+**Google Slides: **
 
-![Text box that says name my pet with an icon of a dog](https://user-images.githubusercontent.com/10623307/213887080-b2bc4645-7fdb-4dbd-ae42-efce00d0dc29.png)
+# Customer Support Chatbot
 
+This is a web-based chatbot created for a CS589 class assignment to answer customer questions about a website.
 
-## Setup
+## Overview
 
-1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
+The chatbot uses:
 
-2. Clone this repository
+- Node.js for the web server  
+- OpenAI's GPT-3 API for natural language processing
+- React for the front-end UI
 
-3. Navigate into the project directory
+Users can ask questions through a browser interface. The chatbot queries GPT-3 to generate answers based on example website FAQs and conversations provided in the training data.
 
-   ```bash
-   $ cd openai-quickstart-node
-   ```
+## Steps
 
-4. Install the requirements
+The steps I took were:
 
-   ```bash
-   $ npm install
-   ```
+1. Set up a Python script to query GPT-3.
 
-5. Make a copy of the example environment variables file
+2. Create a Node.js webserver with Express.
 
-   On Linux systems: 
-   ```bash
-   $ cp .env.example .env
-   ```
-   On Windows:
-   ```powershell
-   $ copy .env.example .env
-   ```
-6. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created `.env` file
+3. Build a React front-end for the chat UI.
 
-7. Run the app
+4. Connect the React front-end to the Node.js back-end.
 
-   ```bash
-   $ npm run dev
-   ```
+5. Deploy the web server on Ubuntu.
 
-You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://platform.openai.com/docs/quickstart).
+## Usage 
+
+To run the chatbot locally:
+
+1. Clone the repo
+2. Install dependencies with `npm install`
+3. Update API Key in `.env` file 
+4. Install dependencies with `npm install`
+5. Run the project with `npm run dev`
+6. Go to `http://localhost:3000` in a browser
+
+## References
+
+References: https://hc.labnet.sfbu.edu/~henry/sfbu/course/machine_learning/chatgpt/slide/exercise_chatgpt.html
+https://hc.labnet.sfbu.edu/~henry/sfbu/course/machine_learning/chatgpt/slide/quickstart.html#Quickstart%20-%20Node.js
+https://hc.labnet.sfbu.edu/~henry/sfbu/course/javascript/node_js/course/nodeschool/learnyounode/node_python.html
+
